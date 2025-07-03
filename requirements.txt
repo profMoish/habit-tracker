@@ -1,3 +1,5 @@
 Django>=4.2  # Основной фреймворк
 gunicorn     # HTTP-сервер для запуска Django в продакшн
 python-dotenv  # Позволяет загружать переменные из .env файла (настройки, секреты)
+psycopg2-binary
+dj-database-url
