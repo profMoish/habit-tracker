@@ -14,6 +14,8 @@ from pathlib import Path
 import dj_database_url
 import os
 
+SECRET_KEY = os.getenv("SECRET_KEY")
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,12 +30,7 @@ SECRET_KEY = 'django-insecure-h)-bci+h!x)=^u53eje4&y6t#*d(0)4eblic!6d0$$v^dhmav9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "habit-tracker-dxiz.onrender.com",  # основной веб-сервис
-    "habit-tracker-bot-9uyf.onrender.com",  # бот
-]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 
 # Application definition
