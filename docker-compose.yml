@@ -13,3 +13,6 @@ services:  # Определение сервисов
 
     environment:
       - DEBUG=1  # Устанавливаем переменную окружения (можно использовать в settings.py)
+      
+    env_file:
+      - .env

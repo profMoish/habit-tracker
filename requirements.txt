@@ -3,3 +3,4 @@ gunicorn     # HTTP-сервер для запуска Django в продакш�
 python-dotenv  # Позволяет загружать переменные из .env файла (настройки, секреты)
 psycopg2-binary
 dj-database-url
+python-telegram-bot>=20

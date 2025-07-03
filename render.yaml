@@ -1,9 +1,18 @@
 services:
   - type: web
-    name: habit-tracker
+    name: habit-tracker-web
     env: docker
     plan: free
     region: frankfurt
     dockerfilePath: ./Dockerfile
     buildCommand: ""
     startCommand: gunicorn habit_tracker.wsgi:application --bind 0.0.0.0:8000
+
+  - type: web
+    name: habit-tracker-bot
+    env: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: python bot.py
