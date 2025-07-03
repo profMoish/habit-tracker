@@ -20,4 +20,5 @@ COPY . .
 # Запускаем приложение
 # В разработке использовать runserver.
 # В продакшене gunicorn — стабильный HTTP-сервер.
-CMD ["gunicorn", "habit_tracker.wsgi:application", "--bind", "0.0.0.0:8000"]
+# CMD ["gunicorn", "habit_tracker.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["python", "bot.py"]
