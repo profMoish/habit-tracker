@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-h)-bci+h!x)=^u53eje4&y6t#*d(0)4eblic!6d0$$v^dhmav9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['habit-tracker-dxiz.onrender.com']
 
 
 # Application definition
