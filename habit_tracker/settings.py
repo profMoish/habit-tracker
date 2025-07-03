@@ -28,7 +28,12 @@ SECRET_KEY = 'django-insecure-h)-bci+h!x)=^u53eje4&y6t#*d(0)4eblic!6d0$$v^dhmav9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['habit-tracker-dxiz.onrender.com']
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "habit-tracker-dxiz.onrender.com",  # основной веб-сервис
+    "habit-tracker-bot-9uyf.onrender.com",  # бот
+]
 
 
 # Application definition
